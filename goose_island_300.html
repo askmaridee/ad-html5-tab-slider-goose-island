@@ -1,0 +1,463 @@
+<div id="hc_richmedia">
+	<script type="text/javascript">
+		if(!window.jQuery || !window.$) {
+			document.write('\x3Cscript src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript">\x3C/script>');
+		}
+	</script>
+	<script src="scripts/27566.js" type="text/javascript"></script>
+	<script type="text/javascript" src="mraid.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/27565.css" media="screen" />
+	
+	<style type="text/css">
+/* Reset Styles***********************/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+strong {font-weight: bold;}
+em {font-style: italic;}
+			
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+/*@font-face {
+    font-family: 'clarendon';
+    src: url('fonts/36760.eot');
+    src: url('fonts/36760.eot?#iefix') format('embedded-opentype'),
+         url('fonts/36762.woff') format('woff'),
+         url('fonts/36763.ttf') format('truetype'),
+         url('images/36761.svg#clarendon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+ 
+ 	body {
+		margin: 0px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	#hc_richmedia {
+		position:relative;
+		width:300px;
+		margin:0 auto;
+      /*border:solid 1px red;*/
+	}
+	#hc_richmedia .hc_initial_view {
+		position:relative;
+		z-index:1;
+	}
+	#hc_richmedia .hc_content {
+		position:relative;
+		width:300px;
+		text-align:center;
+		z-index:1;
+		height: 300px;
+	}
+	#hc_richmedia .hc_closebtn {
+		position:absolute;
+		top:4.5em;
+		right:.2em;
+		z-index:2;
+		cursor:pointer;
+		color: black;
+		border: 1px solid black;
+		border-radius: .2em;
+		padding: .1em;
+		font-size: .8em;
+	}
+	#hc_richmedia .hc_closebtn img {
+		position:relative;
+		z-index:20;
+	}
+	#hc_richmedia .hc_content h3 {
+		margin-top:0;
+	}
+	#hc_richmedia .hc_blockimg {
+		display:block;
+	}
+	a img {border: none;}
+	/* custom styles */
+
+
+#hc_header {
+	background-color: #0085c3;
+	padding: .5em;
+	text-align: left;
+}
+.table { display: table; }
+.table-row { display: table-row; }
+.table-cell {
+	display: table-cell;
+	vertical-align: top;
+}
+
+
+#hc_content {
+	background: transparent url('images/36787.jpg') no-repeat;	
+	height: 400px;
+}
+
+#hc_landing{
+	background: transparent url('images/36753.png') no-repeat;
+	background-size: cover;
+	padding-top: 70px;
+	position: relative;
+	display: none;
+	margin: 0 auto;
+}
+#hc_landing p {
+	width: 80%;
+	margin: 10px auto;
+	line-height: 1em;
+	font-size: .8em;
+	}
+.slides .image { 
+	display: block; 
+/*	width: 320px;*/
+}
+/* HAVING TO OVERWRITE ADLIFE STYLES */
+#flex { margin: 0; }
+.flexslider {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;	
+  margin: 0 auto;
+  background: transparent;
+  border: 0;
+  width: 300px;
+  text-align: left;
+}
+div .flex-direction-nav .flex-prev,
+div .flex-direction-nav .flex-prev:hover{
+	background-image:url('images/36756.png') !important;
+	display: block;
+	width: 20px;
+	height: 52px;
+	z-index: 30;
+	display: none;
+}
+div .flex-direction-nav .flex-next,
+div .flex-direction-nav .flex-next:hover{
+	background-image:url('images/36756.png') !important;
+	display: block;
+	width: 20px;
+	height: 52px;
+	z-index: 30;
+}
+#hc_nav { 
+	position: relative;
+	top: -54px;
+	margin: 0 auto;
+	width: 366px;
+}
+#hc_flexy {
+	position: absolute;
+	bottom: 0;
+	width: 300px;
+	height: 230px;
+}
+#hc_flexy .slides li p, #hc_flexy .slides li img, #hc_flexy .slides li div.title {
+	padding: 0 3.5em;
+}
+#hc_flexy .slides p {
+	line-height: 1.3em;
+}
+#hc_flexy .title {
+	font-family: sans-serif;
+	letter-spacing: .2em;
+	font-size: .8em;
+}
+
+img.woodcut {
+	width: 186px !important;
+	margin: .3em 0;
+}
+
+.flex-control-thumbs {
+	margin: 0;
+}
+.flex-control-thumbs li {
+	width: 50px;	
+	height: 41px;
+	overflow: hidden;
+}
+.flex-control-nav {
+	background-color: #4d5d23;
+	width: 250px;
+	position: relative;
+	bottom: -39px;
+	margin: 0 auto;
+}
+.flex-direction-nav a { opacity: .8; }
+.flex-direction-nav .flex-next {background-position: 100% 0; right: 5px; }
+.flex-direction-nav .flex-prev {left: 5px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled { opacity: 0 !important; }
+.slides p {
+	margin: .2em 0;	
+	padding: 0;
+	font-size: .7em;
+}
+.slides p strong {
+	padding: 0 !important;
+}
+#five p {
+	margin: 1em 0;
+}
+.flex-viewport { 
+	visibility: hidden;
+	height: 147px;
+	top: 20px;
+}
+.flex-direction-nav { 
+	visibility: hidden;
+}
+</style>
+
+<div class="hc_initial_view">		
+  <a href="#" id="hc_expand" onclick="jQuery.hc_rm.expand(event); return false;">		
+  <img class="hc_banner hc_blockimg" src="images/36786.jpg" style="width:300px;height:50px;" />
+  </a>	
+</div><!-- end initial view content -->
+
+<div class="hc_content" id="hc_content" style="display:none;">
+
+  <div class="hc_closebtn" id="hc_closebtn" style="display:none;" onclick="jQuery.hc_rm.collapse(event); return false;">X</div>
+  
+  <div id="hc_flexy" class="ambient_content">
+    <div class="flexslider">
+      <ul class="slides">
+         <li id="one" data-thumb="images/36747.jpg">
+        	<div class="title">CASCADE HOPS</div>
+   			<img class="woodcut" src="images/36734.png" alt="Hops" />
+           <p>Cascade hops add a pleasant, flowery and spicy, citrus-like quality with a slight grapefruit characteristic to Ten Hills Pale Ale.</p>
+         </li>        
+         <li id="two" data-thumb="images/36748.jpg">
+        	<div class="title">PERLE HOPS</div>
+   			<img class="woodcut" src="images/36735.png" alt="Hops" />
+           <p>Perle hops add a smooth hop flavor with a spicy and floral aroma to Ten Hills Pale Ale.</p>
+         </li>
+         <li id="three" data-thumb="images/36749.jpg">
+        	<div class="title">SAAZ HOPS</div>
+   			<img class="woodcut" src="images/36733.png" alt="Hops" />
+           <p>US Saaz hops add a mild, spicy and earthy aroma to Ten Hills Pale Ale.</p>
+         </li>
+         <li id="four" data-thumb="images/36750.jpg">
+        	<div class="title">TASTING NOTES</div>
+          <p><strong>ABV:</strong> 6.2%</p>
+          <p><strong>IBU:</strong> 48</p>
+          <p><strong>Aroma:</strong> Sweet apricot and tangerine followed by biscuit and caramelized sugar.</p>
+          <p><strong>Taste:</strong> Sweet honey and toast. Mid-palate hits with dried apricot and orange zest. Finishes with an earthy, herbal hop character.</p>
+         </li>
+          <li id="five" data-thumb="images/36751.jpg">
+        	<div class="title">ELK MOUNTAIN FARMS</div>
+           <p>Ten Hills Pale Ale traces its story to Bonners Ferry, Idaho's Elk Mountain Farms, a hop farm that has been planting, growing and harvesting hops exclusively for Goose Island beers.</p>
+         </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div id="hc_landing">
+    <img src="images/36730.png" alt="Ten Hills Pale Ale, Goose Island Beer Co" />
+    <p>With hops grown on the first <br>'ten hills' planted for Goose Island <br>at Elk Mountain Farms, we crafted a <br>new pale ale that is remarkably <br>aromatic and flavorful.</p>
+    <img src="images/36731.png" alt="Tap the Icons to Learn More" />
+  </div>
+
+</div>
+
+	<script type="text/javascript">
+		
+		/* DO NOT USE slashes for comments. */
+		/* use .toggle to reveal from left to right, down */
+		/* use .slideToggle to reveal from top to bottom */
+		/* any closing html tags must have the forward slash escaped,e.g. <\/div> */
+	
+		(function ($) {		
+			
+			var fifheight;
+					
+			$.hc_rm = {
+				getQP: function (p) {
+					if(window.location && typeof window.location.search === "string") {
+						var qArray = window.location.search.substr(1).split("&"),qParam,i;
+						for(i=0; i<qArray.length; i++) {
+							qParam = qArray[i].split("=");
+							if(qParam.length === 2 && qParam[0] === p) {
+								return unescape(qParam[1]);
+							}
+						}
+					}
+					return false;
+				},
+				/*getSQP: function(p) {
+					var scriptSrc = $("script[src*='ag.aug.me']").attr('src');
+					var tmp = scriptSrc.split("?");
+					if(tmp.length > 1) {
+						var qArray = tmp[1].split("&"),qParam,i;
+						for(i=0; i<qArray.length; i++) {
+							qParam = qArray[i].split("=");
+							if(qParam.length === 2 && qParam[0] === p) {
+								return unescape(qParam[1]);
+							}
+						}
+					}
+					return false;
+				},*/
+				expand: function (e) {				
+					if (!e) { e = window.event; }
+					e.cancelBubble = true;
+					if (e.stopPropagation) e.stopPropagation();	
+					/* FIF support */
+					if(window.inDapIF === true) {
+						$("iframe",parent.document).each(function(iel, el){
+							if(el.contentWindow === window) {
+								fifheight = $(el).css("height");
+								$(el).css("height","300px");
+								return false;
+							}
+						});
+					}				
+					/* mraid function call */
+					if(typeof mraid !== "undefined") {
+						mraid.useCustomClose(true);
+						mraid.expand();
+					}
+					
+					$('.flexslider').flexslider({
+    					animation: "slide",
+    					animationLoop: false,
+    					reverse: false,
+						startAt: 0,
+						slideshow: false,
+						controlNav: false,
+						directionNav: true,
+						touch: true,
+						start: function(slider) {							
+			    			var slideId = slider.find(".flex-active-slide").attr("id");
+			    			$("#hc_richmedia").append('<img src="#trk:'+slideId+'#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');
+			    		},
+			    		after: function(slider) {
+			    			var slideId = slider.find(".flex-active-slide").attr("id");
+			    			if(slideId == "streams") {
+			    				$(".flex-prev").hide();
+			    			} else if(slideId == "process") {
+			    				$(".flex-next").hide();
+			    			} else {
+			    				$(".flex-prev").show();
+			    			}
+			    			$("#hc_richmedia").append('<img src="#trk:'+slideId+'#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');
+						},	
+	    				controlNav: "thumbnails"
+  					});
+
+
+							$('.flex-control-thumbs img').click(function(e) {
+
+							  $('#hc_landing').hide();
+							  $('.flex-viewport').css('visibility', 'visible');
+							  $('.flex-direction-nav').css('visibility', 'visible');
+
+		  					  var i = $(this).parent().index();
+							  var thumbs = new Array ("one", "two", "three", "four", "five", "six");
+							  $("#hc_richmedia").append('<img src="#trk:thumbnails-' + thumbs[i] + '#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');
+		  });
+
+
+					/* animations for expand */
+					$("#hc_richmedia .hc_initial_view").hide();
+					$("#hc_richmedia #hc_content").show();
+					$("#hc_richmedia .hc_closebtn").show();
+					$("#hc_richmedia #hc_landing").show();
+
+
+					/* Hip expansion tracking */				
+					$("#hc_richmedia").append('<img src="#trk:expansion#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');	
+					
+					/* 3rd party expansion tracker */
+     				/*if(this.getSQP('exp') !== false) {
+     					$("#hc_richmedia").append('<img src="'+decodeURIComponent(this.getSQP('exp'))+'&cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');
+     				}*/
+     								
+					return false;
+				},
+				collapse: function(e) {
+					if (!e) { e = window.event; }
+					e.cancelBubble = true;
+					if (e.stopPropagation) e.stopPropagation();	
+					/* FIF support */
+					if(window.inDapIF === true) {
+						$("iframe",parent.document).each(function(iel, el){
+							if(el.contentWindow === window) {
+								$(el).css("height",fifheight);
+								return false;
+							}
+						});
+					}				
+					/* mraid function call */
+					if(typeof mraid !== "undefined") {
+						mraid.close();
+					}					
+					/* animations for collapse */
+					$("#hc_richmedia .hc_content").hide();
+					$("#hc_richmedia .hc_initial_view").show();
+					$("#hc_richmedia .hc_closebtn").hide();					
+					$("#hc_richmedia").append('<img src="#trk:collapse#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');						
+					$('.flex-viewport').css('visibility', 'hidden');
+					$('.flex-direction-nav').css('visibility', 'hidden');
+					return false;													
+				},
+				engage: function(e) {
+					if (!e) { e = window.event; }
+					e.cancelBubble = true;
+					if (e.stopPropagation) e.stopPropagation();
+					$("#hc_richmedia").append('<img src="#trk:engage#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');
+					return false;
+				}
+				
+			};
+					
+		}(jQuery));
+		
+		/* Add mraid lister */
+		if(typeof mraid !== "undefined") {
+			mraid.addEventListener("stateChange", handleStateChanges);
+		}
+		
+		/* Mraid Handle State Change */
+		function handleStateChanges() {
+
+			switch(mraid.getState()) {
+				case "expanded":
+					jQuery.hc_rm.expand();
+					break;
+				case "default":
+					jQuery.hc_rm.collapse();
+					break;
+			}
+			
+		}
+
+
+
+	</script>
+  
+
+
+    
+</div><!-- end required wrapper -->
